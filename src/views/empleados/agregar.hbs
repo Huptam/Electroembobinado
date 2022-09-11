@@ -1,0 +1,81 @@
+<div class="form-group">
+  <h3 class="">Agregar - Empleado</h3>
+</div>
+<div class="row p-5">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <form action="/empleados/agregar-empleado" method="post" class="needs-validation">
+      <div class="form-group">
+        <label for="">C&eacute;dula</label>
+        <input class="form-control form-control-sm" name="Cedula" type="number">
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="">Primer Nombre (*)</label>
+        <input class="form-control form-control-sm" name="Nombre" type="text">
+      </div>
+      <div class="form-group">
+        <label for="">Segundo Nombre</label>
+        <input class="form-control form-control-sm" name="Nombre2" type="text">
+      </div>
+      <div class="form-group">
+        <label for="">Primer Apellido (*)</label>
+        <input class="form-control form-control-sm" name="Apellido_1" type="text">
+      </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="form-group">
+      <label for="">Segundo Apellido (*)</label>
+      <input class="form-control form-control-sm" name="Apellido_2" type="text">
+    </div>
+    <div class="form-group">
+      <label for="">Tel&eacute;fono (*)</label>
+      <input class="form-control form-control-sm" name="Telefono" type="text">
+    </div>
+    <div class="form-group">
+      <label for="">Fecha de Nacimiento (*)</label>
+      <input class="form-control form-control-sm" name="Fecha_nacimiento" type="date">
+    </div>
+    <div class="form-group">
+      <label for="">Estado Civil</label>
+      <select name="Estado_civil" id="" class="form-control form-control-sm">
+        <option value="soltero">Soltero</option>
+        <option value="casado">Casado</option>
+        <option value="union libre">Uni&oacute;n Libre</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h3>Informaci&oacute;n de Contacto</h3>
+    <hr>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Municipio</label>
+        <input type="text" name="Municipio" class="form-control form-control-sm">
+      </div>
+      <div class="form-group">
+        <label for="">Barrio</label>
+        <input type="text" name="Barrio" class="form-control form-control-sm">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="">Calle</label>
+        <input type="text" name="Calle" class="form-control form-control-sm">
+      </div>
+      <div class="form-group">
+        <label for="">Carrera</label>
+        <input type="text" name="Carrera" class="form-control form-control-sm">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="form-group">
+      <button class="btn btn-block btn-success" type="submit">Añadir</button>
+    </div>
+  </div>
+  </form>
+</div>
+</div>

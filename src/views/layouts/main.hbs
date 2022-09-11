@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electroembobinado</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+<div id="wrapper" class="d-flex" >    
+       {{>sidebar}}
+       <div id="page-container" class="w-100 bg-light-blue p-3">
+        {{> navegacion}}
+          <div class="container-fluid">
+             {{{body}}}
+          </div>
+       </div>
+   </div> 
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

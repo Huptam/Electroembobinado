@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Listado de Reparaciones <div class="float-right"> <a
+              href="reparaciones/agregar-reparacion"><button class="btn btn-success">Añadir</button></a> </div>
+        </h3>
+        <div class="card-tools">
+          <div class="input-group input-group-sm" style="width: 300px;">
+            <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body table-responsive p-0">
+        <table class="table table-hover text-nowrap">
+          {{#each tipos}}
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{Nombre}}</td>
+              <td>{{Descripcion}}</td>
+              <td>
+                <a href=""><button class="btn btn-info">Editar</button></a>
+                <a href=""><button class="btn btn-danger">Eliminar</button></a>
+              </td>
+            </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

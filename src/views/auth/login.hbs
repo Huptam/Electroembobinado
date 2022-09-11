@@ -1,0 +1,29 @@
+{{>message}}
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+
+            <form class="p-3" action="/login" method="POST">
+                <div class="form-group">
+                    <p>El usuario es el n&uacute;mero de c&eacute;dula del empleado.</p>
+                </div>
+                <div class="form-group">
+                    <Label>Usuario:</Label>
+                    <input type="text" name="usuario" class="form-control" placeholder="Digite su cédula">
+                </div>
+                <div class="form-group">
+                    <label for="">Contraseña:</label>
+                    <input type="password" name="password" class="form-control" placeholder="Digite su contraseña"
+                        id="">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-block btn-success" type="submit">Acceder</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

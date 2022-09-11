@@ -1,0 +1,57 @@
+
+<div class="row" id="motor">
+    <div class="col-md-6">
+                <div class="form-group">
+                    <label for="">Propietario del motor: (seleccione un cliente)</label>
+                    <select name="id_cliente" class="form-control" id="">
+                        {{#each cliente}}
+                        <option value="{{identificacion}}">{{Nombre}} {{Apellidos}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="">Tipo de motor: </label>
+                    <select name="Tipo_de_motor" class="form-control" id="">
+                        {{#each tiposdemotor}}
+                        <option value="{{id_tipo}}">{{Nombre}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+                 <div class="form-group">
+                    <label for="">Marca: </label>
+                    <input name="Marca" type="text" class="form-control form-control-md">
+                </div>
+                <div class="form-group">
+                    <label for="">Modelo: </label>
+                    <input name="Modelo" type="text" class="form-control form-control-md">
+                </div>
+                <div class="form-group">
+                    <label for="">Ph: </label>
+                    <input name="Ph" type="number" class="form-control form-control-md">
+                </div>
+            </div>
+    <div class="col-md-6">
+                
+                <div class="form-group">
+                    <label for="">Hp: </label>
+                    <input name="Hp" type="number" class="form-control form-control-md">
+                </div>
+                <div class="form-group">
+                    <label for="">Ranuras: </label>
+                    <input name="Ranuras" type="number" class="form-control form-control-md">
+                </div>
+                <div class="form-group">
+                    <label for="">Voltaje: </label>
+                    <input name="Voltaje" type="text" class="form-control form-control-md">
+                </div>
+                <div class="form-group">
+                    <label for="">Descripcion: </label>
+                    <textarea name="Descripcion" class="form-control" id="" cols="5" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                 
+                    <button type="button" id="atras" class="btn btn-secondary">Atras</button>
+                    <button type="submit" id="siguiente" class="btn btn-success">Agregar</button>
+                </div> 
+    </div>
+</div>

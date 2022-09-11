@@ -1,0 +1,29 @@
+Integrantes: Deimer hernandez, Efrain Vega, Moises payares
+Tareas pendientes:
+- Terminar crud de reparaciones y motores.
+- Filtar busqueda y paginar registros.
+- Validar formularios.
+- Generar graficas del inventario.
+
+-------------------- Instrucciones -------------------------
+NOTA: Tener instalado Node JS para la ejecucion de la app.
+1) Ejecutar el script de la base de datos (se encuentra en la carpeta src/database).
+
+2) Abrir la carpeta del proyecto con Visual Studio Code.
+
+3) Abrir una nueva terminal dentro del editor.
+
+4) Ejecutar el comando: 'npm install' (SIN COMILLAS).
+--------------------------------------------------------
+(omitir si el gestor de base de datos no tiene contraseña)
+
+5) Abrir el archivo 'keys.js' y agregar la contraseña a la cual 
+   se va a conectar la base de datos en la propiedad password.
+
+6) Ejecutar en la consola el comando 'npm start' (SIN COMILLAS).
+
+7) Arir el navegador y entrar a la ruta 'http://localhost:4000/' (SIN COMILLAS).
+
+8) Autenticarse en la aplicacion con los siguientes datos
+	usuario: 2647899
+	password: 1234567

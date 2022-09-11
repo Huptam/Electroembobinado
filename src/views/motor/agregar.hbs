@@ -1,0 +1,19 @@
+<div class="form-group">
+    <h3 class="">Agregar Nuevo - Motor</h3>
+</div>
+<div class="form-group">
+    <p style="font-size: 20px;" id="titulo">Informaci&oacute;n de Embobinado</p>
+</div>
+<form action="/motores/agregar-motor" method="POST">
+    <div class="row p-3" id="bobina">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            {{>bobina}}
+        </div>
+        <div class="form-group">
+            <button type="button" id="siguiente" class="btn btn-success">Continuar</button>
+            <button type="reset" class="btn btn-danger">Limpiar Campos</button>
+        </div>
+    </div>
+    {{>motor}}
+</form>
+</div>

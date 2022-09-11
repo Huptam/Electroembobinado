@@ -1,0 +1,44 @@
+ <div class="form-group">
+    <h3 class=""> Editar nueva pieza</h3>
+ </div>
+ <div class="row p-3">
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+         <form action="/inventario/editar/{{piezas.Codigo}}" method="POST">
+             <div class="form-group">
+                 <label for="">Nombre:</label>
+                 <input name="Nombre" type="text" value="{{piezas.Nombre}}" class="form-control form-control-md">
+             </div>
+             <div class="form-group">
+                 <label for="">Cantida:</label>
+                 <input name="Cantidad" type="number" value="{{piezas.Cantidad}}" class="form-control form-control-md">
+             </div> 
+             <div class="form-group">
+                 <label for="">Stock-min:</label>
+                 <input name="Stock" type="number" value="{{piezas.Stock}}" class="form-control form-control-md">
+             </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                
+             <div class="form-group">
+                 <label for="">Valor unitario:</label>
+                 <input name="Valor_unitario" type="number" value="{{piezas.Valor_unitario}}" class="form-control form-control-md">
+             </div>
+             <div class="form-group">
+                 <label for="">Valor costo:</label>
+                 <input name="Valor_costo" type="number" value="{{piezas.Valor_costo}}" class="form-control form-control-md">
+             </div>
+              <div class="form-group">
+                 <label for="">Categoria</label>
+                <select name="Categoria" id="" class="form-control">
+                    <option value="">motor</option>
+                    <option value="">bobina</option>
+                    <option value="">clf</option>
+                    <option value="">sdsd</option>
+                </select>
+             </div>
+             <div class="form-group">
+                 <button type="submit" class="btn btn-success">Añadir</button>
+             </div>
+            </div>
+         </form>  
+ </div>

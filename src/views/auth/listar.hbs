@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Listado de Usuarios <div class="float-right"> <a href="agregar"><button class="btn btn-success">Nuevo usuario</button></a> </div> </h3>
+          <div class="card-tools">
+            <div class="input-group input-group-sm" style="width: 300px;">
+              <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body table-responsive p-0">
+          <table class="table table-hover text-nowrap">
+          
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>CONTRASEÑA</th>
+                <th>FECHA DE REGISTRO</th>
+                <th>USUARIO</th>
+                <th>OPERACIONES</th>
+              </tr>
+            </thead>
+              {{#each usuarios}}
+            <tbody>
+             
+              <tr>
+                  <td>{{id}}</td>
+                  <td>{{password}}</td>
+                  <td>{{ fecha_registro}}</td>
+                  <td>{{usuario}}</td>
+                <td>
+                  <a href=""><button class="btn btn-info">editar</button></a>
+                  <a href="/empleados/eliminar"><button class="btn btn-danger">Eliminar</button></a>
+                  </td>
+              </tr>
+
+              {{else}}
+              <tbody>
+                <tr>
+                  <div class="col-md-6 mx-auto mt-3">
+                <div class="card card-body text-center">
+                  <p>No hay usuarios registrados</p>
+                  <a href="/empleados/agregar-empleado">agregar</a>
+                </div>
+              </div>
+
+                </tr>
+                 
+
+              </tbody>
+             
+            {{/each}}
+            </tbody>
+          </table>
+        </div>
+    
+        <!-- /.card-body -->
+      </div>
+      <!-- /.card -->
+    </div>
+  </div>
