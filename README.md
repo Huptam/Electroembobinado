@@ -2,7 +2,7 @@
     <h1 align="center">Project Electroembobinado (not completed)</h1>
 </p>
 
-Simple CRUD in Node.js
+Simple CRUD in Node.js with [Handlebars](https://handlebarsjs.com/).
 
 Integrantes: Deimer Hernandez, Efrain Vega, Moisés Payares
 
