@@ -3,7 +3,9 @@
 </p>
 
 Simple CRUD in Node.js
-Integrantes: Deimer hernandez, Efrain Vega, Moisés Payares
+
+Integrantes: Deimer Hernandez, Efrain Vega, Moisés Payares
+
 2020
 
 ## Installation
